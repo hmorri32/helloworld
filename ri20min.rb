@@ -6,7 +6,7 @@ class MegaGreeter
   end
 
   def say_hi
-    if@names.nil?
+    if @names.nil?
       puts "..."
     elsif @names.respond_to?('each')
       @names.each do |name|
@@ -16,7 +16,6 @@ class MegaGreeter
       puts "Hello #{@names}!"
     end
   end
-
   def say_bye
     if @names.nil?
       puts "..."
