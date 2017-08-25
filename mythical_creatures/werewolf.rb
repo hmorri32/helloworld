@@ -29,10 +29,13 @@ class Werewolf
   end
 
   def consume(victim)
-    @human ? "no eats" :
-    victim.status  = :dead
-    @victim_count += 1
-    @hungry        = false
+    if @human 
+      'no'
+    else
+      victim.status  = :dead
+      @victim_count += 1
+      @hungry        = false
+    end
   end
 
 
